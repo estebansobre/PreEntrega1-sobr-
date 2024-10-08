@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Créditos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            margin: 5px 0;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green; 
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulador de Créditos</h1>
+    <div>
+        <label for="monto">Monto del Préstamo:</label>
+        <input type="number" id="monto" placeholder="Ej: 10000" required>
+    </div>
+    <div>
+        <label for="interes">Tasa de Interés Anual (%):</label>
+        <input type="number" id="interes" placeholder="Ej: 5" required>
+    </div>
+    <div>
+        <label for="plazo">Plazo en Meses:</label>
+        <input type="number" id="plazo" placeholder="Ej: 12" required>
+    </div>
+    <div>
+        <button id="calcular">Calcular Cuota Mensual</button>
+    </div>
+    <div id="resultado"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
